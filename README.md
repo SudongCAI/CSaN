@@ -1,5 +1,5 @@
 # Overview
-**Official implementation** of the practical method, ***CSaN***, derived from the ***SaN*** interpretation framework introduced in "Selection-as-Nonlinearity: Bridging Attention and Activation via a Joint Game–Decision Lens for Interpretable, Discriminative Visual Representations", a **CVPR 2026 Highlight paper in the *Deep learning architectures and techniques*** subject area.
+**Official implementation** of the practical method, ***CSaN***, derived from the ***SaN*** interpretation framework introduced in "Selection-as-Nonlinearity: Bridging Attention and Activation via a Joint Game–Decision Lens for Interpretable, Discriminative Visual Representations", a **CVPR 2026 *Highlight* paper in the *Deep learning architectures and techniques*** subject area.
 
 ### Notes
 
