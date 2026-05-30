@@ -12,8 +12,10 @@
 ## Install Requirements
 Please see environment-full.yml
 
+------------------------------------------------
+
 ## Training from scratch
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port 12345 train_dist_torch_compile.py "$@" /{path to imagenet}/ --model {model: e.g., swin_tiny_csan_v2} --epochs 300 --cooldown-epochs 10 --checkpoint-hist 1 -b 128 --grad-accum-steps 4 --opt adamw --lr 2e-3 --weight-decay 0.05 --warmup-epochs 20 --drop 0 --drop-path {by model: e.g., 0.2 for swin_tiny_xxx and 0.3 for swin_small_xxx, please see the table below} --aug-repeats 3 --mixup 0.8 --cutmix 1.0 --color-jitter 0.4 --opt-eps 1e-8 --smoothing 0.1 --remode pixel --reprob 0.25 --aa rand-m9-mstd0.5-inc1 --seed 0 --warmup-lr 1e-6 --min-lr 1e-5 --sched cosine --sched-on-updates -j 8 --amp --amp-dtype bfloat16 --dist-bn reduce --torchcompile --output /{path to save checkpoints}
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 --master_port 12345 train_dist_torch_compile.py "$@" /{path to imagenet}/ --model {model: e.g., swin_tiny_csan_v2} --epochs 300 --cooldown-epochs 10 --checkpoint-hist 1 -b 128 --grad-accum-steps 4 --opt adamw --lr 2e-3 --weight-decay 0.05 --warmup-epochs 20 --drop 0 --drop-path {by model: e.g., 0.2 for swin_tiny_xxx and 0.3 for swin_small_xxx, please see the table below for more recommended settings} --aug-repeats 3 --mixup 0.8 --cutmix 1.0 --color-jitter 0.4 --opt-eps 1e-8 --smoothing 0.1 --remode pixel --reprob 0.25 --aa rand-m9-mstd0.5-inc1 --seed 0 --warmup-lr 1e-6 --min-lr 1e-5 --sched cosine --sched-on-updates -j 8 --amp --amp-dtype bfloat16 --dist-bn reduce --torchcompile --output /{path to save checkpoints}
 
 
 
