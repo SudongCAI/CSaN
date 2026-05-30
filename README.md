@@ -9,7 +9,7 @@
 
 ### Notes
 
-- SaN and CSaN are not intended to be limited to vision. We would be grateful if the broader community could help explore its applicability to diverse data modalities and tasks. As a preliminary example, we have also observed clear improvements from CSaN on a bioinformatics task involving structural data.
+- SaN and CSaN are **not** intended to be **limited to vision**. ***We would be grateful if the broader community could help explore its applicability to diverse data modalities and tasks***. As a preliminary example, we have also observed **clear improvements from CSaN on a bioinformatics task** involving structural data.
 
 - CSaN is not a plug-and-play module, but rather a model-specific compensation scheme guided by the SaN perspective. The CSaN implementations for the Swin, ViT, and Hiera families are provided as examples that users can follow to build tailored CSaN variants for the attention models they wish to implement.
 
