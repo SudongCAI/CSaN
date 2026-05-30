@@ -5,6 +5,8 @@
 
 [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Selection-as-Nonlinearity_Bridging_Attention_and_Activation_via_a_Joint_Game-Decision_Lens_CVPR_2026_paper.html)
 
+[Youtube Short Video](https://www.youtube.com/watch?v=E1xBGERCWVQ)
+
 ### Notes
 
 - SaN and CSaN are not intended to be limited to vision. We would be grateful if the broader community could help explore its applicability to diverse data modalities and tasks. As a preliminary example, we have also observed clear improvements from CSaN on a bioinformatics task involving structural data.
